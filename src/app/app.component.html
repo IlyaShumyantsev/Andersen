@@ -1,0 +1,83 @@
+<main>
+    <div class="mainFormBlock">
+        <form #myForm="ngForm" (ngSubmit)="create()">
+            <div class="nameForm">
+                Добавление сотрудника
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="firstName"> Введите Ваше имя: </label>
+                <input [(ngModel)]="firstName" class="inputText" type="text" name="firstName" placeholder="Имя" autofocus="" ngModel required pattern="^[a-zA-Z-А-Яа-яЁё]+$">
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="secondName"> Введите Вашу фамилию: </label>
+                <input [(ngModel)]="secondName" class="inputText" type="text" name="secondName" placeholder="Фамилия" ngModel required pattern="^[a-zA-Z-А-Яа-яЁё]+$">
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="patronymic"> Введите Ваше отчество: </label>
+                <input [(ngModel)]="patronymic" class="inputText" type="text" name="patronymic" placeholder="Отчество" ngModel required pattern="^[a-zA-Z-А-Яа-яЁё]+$">
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="post"> Должность: </label>
+                <input [(ngModel)]="post" class="inputText" type="text" name="post" placeholder="Должность" ngModel required pattern="^[a-zA-Z-А-Яа-яЁё]+$">
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="date"> Дата рождения: </label>
+                <input [(ngModel)]="date" class="inputText" type="date" name="date" [(ngModel)]="date" required />
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="salary"> Сумма оклада: </label>
+                <div class="positionSalary">
+                    <input [(ngModel)]="salary" type="text" class="inputTextSalary" name="salary" placeholder="568.67" ngModel required pattern="\d+(\.\d{1,})?">
+                    <select [(ngModel)]="valuta" class="requiredValutaLabel" name="valuta" ngModel required pattern="^[a-zA-Z-А-Яа-яЁё]+$">
+                        <option disabled="">Выберите валюту</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="RUB">RUB</option>
+                        <option value="BYN" ng-selected="BYN">BYN</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="email"> Введите Ваш e-mail: </label>
+                <input [(ngModel)]="email" class="inputText" type="email" name="email" placeholder="example@gmail.com" ngModel required pattern="\S+@[a-z]+.[a-z]+">
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="phone"> Номер телефона: </label>
+                <input [(ngModel)]="phone" class="inputText" type="text" name="phone" placeholder="+375336947626" ngModel required pattern="\+\d{12}">
+            </div>
+            <div class="field">
+                <label class="requiredLabel" for="house"> Адрес: </label>
+                <input [(ngModel)]="house" class="inputText" type="text" name="house" placeholder="Страна, Город, Улица, Дом, Квартира" ngModel required pattern="[A-Za-zА-Яа-яЁё]{3,12},\s[A-Za-zА-Яа-яЁё]{3,12},\s[A-Za-zА-Яа-яЁё]{3,12},\s\d+(,\s\d+)?">
+            </div>
+            <div class="formButton">
+                <button type="submit" class="addButton" [disabled]="myForm.form.invalid">{{buttonName}}</button>
+                <input id="deleteButton" class="deleteButton" value="Очистить" type="reset"/>
+            </div>
+        </form>
+    </div>
+    <table class="table1" id="table1" [ngStyle]="doButtonStyle">
+        <tr>
+            <th>ФИО</th>
+            <th>Должность</th>
+            <th>Дата рождения</th>
+            <th>Сумма оклада</th>
+            <th>Электронный адрес</th>
+            <th>Контактный телефон</th>
+            <th>Адрес проживания</th>
+            <th>Действие</th>
+        </tr>
+        <tbody id="tbody" *ngIf="todos.lenght != 0">
+            <tr *ngFor="let todo of todos">
+                <td>{{todo.secondName}} {{todo.firstName}} {{todo.patronymic}}</td><td>{{todo.post}}</td><td>{{todo.date}}</td><td>{{todo.salary}} {{todo.valuta}}</td><td>{{todo.email}}</td><td>{{todo.phone}}</td><td>{{todo.house}}</td>
+                <td><div (click)="delete(todo)" class="todoButton">Удал.</div><div (click)="edit(todo)" class="todoButton">Редакт.</div></td>
+            </tr>
+        </tbody>
+    </table>
+    <div *ngIf="trigger == true" class="shadowWindow" id="shadowWindow">
+        <div class="modalWindow" id="modalWindow">
+            <div class="textModalWindow">Удалить?</div>
+            <button class="buttonYes" id="buttonYes" (click)="choise(true)">Да</button>
+            <button class="buttonNo" id="buttonNo" (click)="choise(false)">Нет</button>
+        </div>
+    </div>
+</main>

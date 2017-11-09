@@ -1,0 +1,259 @@
+@font-face {
+  font-family: MachineC;
+  src: url(../fonts/MachineC.otf); }
+@font-face {
+  font-family: PTSerifBold;
+  src: url(../fonts/PTSerifBold.ttf); }
+@font-face {
+  font-family: Arial;
+  src: url(../fonts/Arial.ttf); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003126}}
+body, body main {
+  margin: 0 auto;
+  width: 1300px;
+  background: repeating-radial-gradient(#dea368, #d6a089, #d09ea6);
+  height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003127}}
+  body .page-preloader {
+    margin: 0 auto;
+    background: repeating-radial-gradient(#dea368, #d6a089, #d09ea6);
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003137}}
+    body .page-preloader .element-preloader {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      font-family: PTSerifBold;
+      color: #F5F5DC;
+      font-size: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003152}}
+  body main {
+    padding: 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003160}}
+    body main .mainFormBlock {
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      background-color: #efefef; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003168}}
+      body main .mainFormBlock .nameForm {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        font-family: MachineC;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003177}}
+      body main .mainFormBlock .field {
+        width: 450px;
+        margin: 0 auto;
+        margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003182}}
+        body main .mainFormBlock .field .requiredLabel, body main .mainFormBlock .field .requiredValutaLabel {
+          cursor: pointer;
+          font-family: PTSerifBold;
+          font-size: 15px;
+          color: #373636; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003189}}
+        body main .mainFormBlock .field .inputText, body main .mainFormBlock .field .inputTextSalary, body main .mainFormBlock .field .requiredValutaLabel {
+          font-family: PTSerifBold;
+          font-size: 15px;
+          color: rgba(0, 0, 0, 0.5);
+          background-color: #fff;
+          border: 2px solid #cccccc;
+          padding-left: 5px;
+          width: 400px;
+          height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000355}}
+        body main .mainFormBlock .field .inputText:valid, body main .mainFormBlock .field .inputTextSalary:valid, body main .mainFormBlock .field .requiredValutaLabel:valid {
+          color: rgba(0, 0, 0, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000358}}
+        body main .mainFormBlock .field .inputText:invalid, body main .mainFormBlock .field .inputTextSalary:invalid, body main .mainFormBlock .field .requiredValutaLabel:invalid {
+          color: rgba(0, 0, 0, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000361}}
+        body main .mainFormBlock .field .inputText:focus, body main .mainFormBlock .field .inputTextSalary:focus, body main .mainFormBlock .field .requiredValutaLabel:focus {
+          border: 2px solid #12ad5e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000332}}
+        body main .mainFormBlock .field .inputText.ng-touched.ng-invalid, body main .mainFormBlock .field .ng-touched.ng-invalid.inputTextSalary, body main .mainFormBlock .field .ng-touched.ng-invalid.requiredValutaLabel {
+          border: 2px solid #cf3542; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000335}}
+        body main .mainFormBlock .field .inputText.ng-touched.ng-valid, body main .mainFormBlock .field .ng-touched.ng-valid.inputTextSalary, body main .mainFormBlock .field .ng-touched.ng-valid.requiredValutaLabel {
+          border: 2px solid #62db47; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000338}}
+        body main .mainFormBlock .field .inputText.ng-pristine.ng-invalid.ng-touched, body main .mainFormBlock .field .ng-pristine.ng-invalid.ng-touched.inputTextSalary, body main .mainFormBlock .field .ng-pristine.ng-invalid.ng-touched.requiredValutaLabel {
+          border: 2px solid #cccccc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000341}}
+        body main .mainFormBlock .field .inputText.ng-pristine.ng-invalid.ng-touched:focus, body main .mainFormBlock .field .ng-pristine.ng-invalid.ng-touched.inputTextSalary:focus, body main .mainFormBlock .field .ng-pristine.ng-invalid.ng-touched.requiredValutaLabel:focus {
+          border: 2px solid #12ad5e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000344}}
+        body main .mainFormBlock .field .inputText.ng-touched.ng-invalid:focus, body main .mainFormBlock .field .ng-touched.ng-invalid.inputTextSalary:focus, body main .mainFormBlock .field .ng-touched.ng-invalid.requiredValutaLabel:focus {
+          border: 2px solid #cccccc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000347}}
+        body main .mainFormBlock .field .inputText.ng-invalid.ng-dirty.ng-touched:focus, body main .mainFormBlock .field .ng-invalid.ng-dirty.ng-touched.inputTextSalary:focus, body main .mainFormBlock .field .ng-invalid.ng-dirty.ng-touched.requiredValutaLabel:focus {
+          border: 2px solid #62db47; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003204}}
+        body main .mainFormBlock .field .inputTextSalary {
+          width: 318px;
+          height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003210}}
+        body main .mainFormBlock .field .requiredValutaLabel {
+          width: 78px;
+          height: 46px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003218}}
+      body main .mainFormBlock .formButton {
+        margin: 0 auto;
+        width: 410px;
+        height: 70px;
+        margin-top: 20px;
+        margin-bottom: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000368}}
+        body main .mainFormBlock .formButton .addButton, body main .mainFormBlock .formButton .deleteButton {
+          outline: 0 !important;
+          border: 3px solid #efefef;
+          background-color: #12ad5e;
+          margin: 0 auto;
+          width: 200px;
+          height: 50px;
+          font-family: PTSerifBold;
+          font-size: 20px;
+          color: #fff;
+          border-radius: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000380}}
+          body main .mainFormBlock .formButton .addButton:disabled, body main .mainFormBlock .formButton .deleteButton:disabled {
+            background-color: #5f5858;
+            cursor: default; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000384}}
+          body main .mainFormBlock .formButton .addButton:disabled:hover, body main .mainFormBlock .formButton .deleteButton:disabled:hover {
+            background-color: #5f5858;
+            cursor: default; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000388}}
+          body main .mainFormBlock .formButton .addButton:hover, body main .mainFormBlock .formButton .deleteButton:hover {
+            cursor: pointer;
+            background-color: #1ccf4a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000393}}
+        body main .mainFormBlock .formButton .deleteButton {
+          background-color: #d00b0b; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\0000397}}
+          body main .mainFormBlock .formButton .deleteButton:hover {
+            cursor: pointer;
+            background-color: #da4641; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003228}}
+    body main .table1 {
+      width: 90%;
+      font-family: PTSerifBold;
+      font-size: 15px;
+      background: #fff;
+      margin: 0 auto;
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin-bottom: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003238}}
+      body main .table1 th {
+        text-align: center;
+        padding: 5px;
+        background: #12ad5e;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        height: 50px;
+        font-size: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003248}}
+      body main .table1 td {
+        border-bottom: 2px solid #fff;
+        background: #e8edff;
+        padding: 5px;
+        text-align: center;
+        vertical-align: top;
+        width: 200px;
+        height: 50px;
+        word-wrap: break-word;
+        color: #595656;
+        font-family: Arial;
+        font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003105}}
+        body main .table1 td .todoButton {
+          background-color: #e7df34;
+          width: 110px;
+          height: 30px;
+          text-align: center;
+          padding-top: 10px;
+          font-size: 15px;
+          outline: 0 !important;
+          border: 3px solid #efefef;
+          margin: 0 auto;
+          font-family: PTSerifBold;
+          color: #fff;
+          border-radius: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003119}}
+          body main .table1 td .todoButton:hover {
+            cursor: pointer;
+            background-color: #ccca13; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003264}}
+    body main .shadowWindow {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003273}}
+      body main .shadowWindow .modalWindow {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        height: 150px;
+        width: 400px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 0 1360px rgba(0, 0, 0, 0.9);
+        background: #efefef; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003288}}
+        body main .shadowWindow .modalWindow .textModalWindow {
+          padding-top: 10px;
+          padding-bottom: 20px;
+          width: 100%;
+          text-align: center;
+          font-family: MachineC;
+          font-size: 30px;
+          color: rgba(0, 0, 0, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003298}}
+        body main .shadowWindow .modalWindow .buttonYes, body main .shadowWindow .modalWindow .buttonNo {
+          outline: 0 !important;
+          border: 3px solid #efefef;
+          background-color: #12ad5e;
+          margin: 0 auto;
+          width: 100px;
+          height: 40px;
+          font-family: PTSerifBold;
+          font-size: 17px;
+          color: #fff;
+          border-radius: 10px;
+          margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003312}}
+        body main .shadowWindow .modalWindow .buttonYes:hover, body main .shadowWindow .modalWindow .buttonNo:hover {
+          cursor: pointer;
+          background-color: #1ccf4a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003317}}
+        body main .shadowWindow .modalWindow .buttonNo {
+          background-color: #d72d2d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Files\%20and\%20programs\/Andersen\/Laba3\/css\/sass\/styles\.scss}line{font-family:\00003322}}
+        body main .shadowWindow .modalWindow .buttonNo:hover {
+          cursor: pointer;
+          background-color: #d64a4a; }
